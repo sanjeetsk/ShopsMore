@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="brand">
+            <a href="/">MeShop.</a>
+        </div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/user/login.html">Login</a>
+            <a href="/user/signUp.html">Signup</a>
+            <a href="/">My Cart</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="Form 2">
+            <h2>Teachers Dashboard</h2>
+            <br><br>
+            <h3 id="userName"></h3>
+            <br><br>
+            <h3 id="userEmail"></h3>
+            <br><br>
+            <h2>Change Password</h2>
+            <form>
+                <br><br>
+                <input type="password" id="password" required placeholder="Old PASSWORD"><br><br>
+                <input type="password" id="newPassword" required placeholder="New PASSWORD"><br><br>
+                <input type="password" id="confirm-newPassword" required placeholder="Confirm New PASSWORD"><br><br>
+                <input type="submit" value="Change Password" id="submit">
+            </form>
+            <p id="message"></p>
+            <br>
+            <input type="submit" value="Logout" id="logout">
+        </div>
+    </main>
+    <script src="dashboard.js"></script>
+</body>
+</html>
