@@ -1,4 +1,4 @@
-var isLoggedIn = false;
+let isLoggedIn = false;
 
 function signup(event) {
     event.preventDefault();
@@ -74,3 +74,8 @@ function isValidEmail(email) {
     return emailRegex.test(email);
 }
 
+let addCart=document.querySelector('.cart');
+
+addCart.addEventListener("click", () => {
+    alert("Please login to continue!!");
+})

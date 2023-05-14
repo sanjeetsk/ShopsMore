@@ -4,35 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document1</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="../logo.ico" type="image/x-icon">
+
 </head>
 <body>
 
-    <nav>
+    <div id="nav">
         <div class="brand">
-            <a href="/">MeShop.</a>
+            <a>MeShop.</a>
         </div>
         <div class="nav-items">
-            <a href="/">Home</a>
-            <a href="/user/login.html">Login</a>
-            <a href="/user/signUp.html">Signup</a>
-            <a href="/">My Cart</a>
+            <a class="home" href="/">Home</a>
+            <a class="login" href="#">Login</a>
+            <a class="signUp" href="./signUp.html">Signup</a>
+            <a class="cart" href="">My Cart</a>
         </div>
-    </nav>
+    </div>
 
-    <main>
-        <div class="Form 1">
-            <h2>Login</h2>
+    <div id="main">
+        <div class="container">
             <form onsubmit="login(event)">
-                <br><br>
+                <h3>Login</h3>
+                <br>
                 <input type="email" id="email" required placeholder="EMAIL"><br><br>
                 <input type="password" id="password" required placeholder="PASSWORD"><br><br>
                 <button type="submit">Login</button>
             </form>
             <p id="errMessage"></p>
+            <div class="login-register">
+                <p>Don't have an account?<a href="./signUp.html"> SignUp</a></p>
+            </div>
         </div>
-    </main>
+    <div>
 
     <script src="login.js"></script>
 

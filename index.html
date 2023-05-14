@@ -7,72 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MeShop.</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./logo.ico" type="image/x-icon">
 </head>
 
 <body>
+    
     <nav>
         <div class="brand">
-            <a href="/">MeShop.</a>
+            <a>MeShop.</a>
         </div>
         <div class="nav-items">
-            <a href="/">Home</a>
-            <a href="/user/login.html">Login</a>
-            <a href="/user/signUp.html">Signup</a>
-            <a href="/">My Cart</a>
+            <a class="home" href="#">Home</a>
+            <a class="login" href="#">Login</a>
+            <a class="signUp" href="#">Signup</a>
+            <a class="cart" href="#">My Cart</a>
         </div>
     </nav>
 
     <main>
         <div id="txt">
-            <h1>
-                MeShop.
-            </h1>
-            <br>
-            <h4>
-                Your First shop built on HTML, CSS And JavaScript
-            </h4>
-            <br>
+            <h4>The shop built on HTML, CSS And JavaScript</h4><br>
         </div>
-
         <div id="display">
             <div>
                 <div>
-                    <form>
-                        <input type="button" value="Login" onclick="window.location.href = './user/login.html';">
-                        <input type="button" value="Signup" onclick="window.location.href = './user/signUp.html';">
-                        <br><br>
-                    </form>
+                    <input class="btn" type="button" value="Login" onclick="window.location.href = './user/login.html';">
+                    <input class="btn" type="button" value="Signup" onclick="window.location.href = './user/signUp.html';">
+                    <br><br>           
                 </div>
-                <div id="container">
-                    <a href="./shop/index.html"><img src="./tshirt.png" alt="shop" id="tshirt"></a>
-                    <div class="info">
-                        <div class="row">
-                            <div class="price">$100</div>
-                            <div class="sized">S,M,L</div>
-                        </div>
-                        <div class="colors">
-                            Colors:
-                            <div class="row">
-                                <div class="circle" style="background-color: #000"></div>
-                                <div class="circle" style="background-color: #4938af"></div>
-                                <div class="circle" style="background-color: #203d3e"></div>
-                            </div>
-                        </div>
-                        <div class="row">Rating:</div>
-                        <button id="addBtn" onclick="home()">Shop Now</button>
-                    </div>
+                <div class="product">
                 </div>
             </div>
             <div>
-                <a href="./shop/index.html"><img src="./LandingPage.jpg" alt="shop" id="shopImg"></a>
+                <a class="cart"><img src="./LandingPage.jpg" alt="shop" id="shopImg"></a>
             </div>
         </div>
     </main>
-    <script>
-        function home(){
-            window.location.href = "./shop/index.html";
-        }
-    </script>
+    <script src="./index.js"></script>
 </body>
 
 </html>

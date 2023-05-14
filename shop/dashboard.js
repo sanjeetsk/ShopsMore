@@ -6,12 +6,12 @@ const emailElement = document.getElementById("userEmail");
 const message = document.getElementById("message");
 
 nameElement.innerText = "Welcome Back : " + currentUser.name;
-emailElement.innerText = "Your Email id : " + currentUser.email;
+emailElement.innerText = "Email id : " + currentUser.email;
 
 const form = document.querySelector('form');
 form.addEventListener("submit", (e) => {
 
-    // e.preventDefault();
+    e.preventDefault();
     const oldPassword = document.getElementById("password").value;
     const newPassword = document.getElementById("newPassword").value;
     const confirmNewPassword = document.getElementById("confirm-newPassword").value;
@@ -54,16 +54,16 @@ form.addEventListener("submit", (e) => {
 
     localStorage.setItem('users', JSON.stringify(users));
     localStorage.setItem("currentUser", JSON.stringify(currentUser));
-    message.innerText = "Password changed successfully. ";
+    message.innerText = "Password changed successfully.";
+    alert("Password changed successfully. ");
 
 });
 
-const logoutButton = document.getElementById("logout");
-logoutButton.addEventListener('click', () => {
-    currentUser = null;
-    localStorage.setItem("currentUser", null);
-    window.location.href = "./login.html";
-});
+const logout = document.querySelector('.logout');
+logout.addEventListener('click', () => {
+    window.location.href = "../user/login.html";
+    localStorage.removeItem('currentUser');
+})
 
 
 

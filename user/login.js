@@ -1,6 +1,12 @@
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 let errMessage = document.getElementById("errMessage");
+let addCart=document.querySelector('.cart');
+
+
+addCart.addEventListener("click", () => {
+    alert("Please login to continue!!");
+})
 
 function login(event) {
     event.preventDefault();
@@ -20,38 +26,39 @@ function login(event) {
 
     // const teacher = users.find(user => user.email === email.value && user.password === password.value);
 
-    const findTeacher = () => {
-        let teacher;
+    const findUser = () => {
+        let profile;
         users.forEach((user)=> {
             if(user.email == email.value && user.password == password.value) {
-                teacher = user;
+                profile = user;
             }
         })
-        return teacher; // return teacher object or undefined(false);
+        return profile; // return profile object or undefined(false);
     }
 
-    let teacher = findTeacher();
+    let profile = findUser();
 
-    if (!teacher) {
+    if (!profile) {
         errMessage.innerText = "User doesn't exist";
         return;
     }
+
     else {
         let currentUser = {
-            "email": teacher.email,
-            "password": teacher.password,
-            "name": teacher.name,
+            "email": profile.email,
+            "password": profile.password,
+            "name": profile.name,
             "token": generateRandomString(),
         }
         localStorage.setItem("currentUser", JSON.stringify(currentUser));
-        window.location.href = "./Dashboard.html";
+        window.location.href = "../shop/index.html";
     }
 
 };
 
 let currectUser = JSON.parse(localStorage.getItem("currentUser"));
 if (currectUser) {
-    window.location.href = "./dashboard.html";
+    window.location.href = "../shop/index.html";
 }
 
 // generate random string

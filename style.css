@@ -56,6 +56,15 @@ main {
     margin-top: 60px;
 }
 
+.btn{
+    border: none;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+}
+
 #display {
     display: flex;
     justify-content: space-around;
@@ -66,37 +75,29 @@ main {
     width: 20vw;
 }
 
+.info{
+    text-align: center;
+    margin: 1rem;
+}
+
 #shopImg {
     height: 70vh;
-    width: 70vw;
+    width: 60vw;
 }
 
-#container {
+.container {
     border: 1px solid black;
     padding: 10px;
+    border-radius: 2%;
+    width: 25vw;
 }
 
-#container p {
+.container p {
     display: flex;
     justify-content: space-between;
 }
 
-.colors {
-    display: flex;
-}
-
-.colors .row{
-    display: flex;
-}
-
-.circle {
-    width: 20px;
-    height: 20px;
-    border-radius: 100%;
-    margin: 0 5px;
-}
-
-.info #addBtn {
+.addBtn {
         width: 100%;
         border-radius: none;
         border: none;
