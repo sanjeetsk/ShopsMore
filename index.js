@@ -33,6 +33,7 @@ fetch('https://fakestoreapi.com/products')
             </div>
             <button class="addCart addBtn">Add to cart</button>
         </div>`;
+        
         const addCart = document.querySelector('.addCart');
         addCart.addEventListener("click", () => {
             alert("Please login to continue!!");

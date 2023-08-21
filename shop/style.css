@@ -229,3 +229,42 @@ body{
 }
 
 
+@media (max-width: 768px) {
+    .left {
+        left: -100%; /* Hide the left sidebar by default on smaller screens */
+    }
+
+    body {
+        margin: 0; /* Remove the margin for the main content on smaller screens */
+        padding-left: 0;
+        box-sizing: border-box;
+        right: 0;
+    }
+
+    .container{
+        margin: 0px;
+    }
+    
+    .categories{
+        margin: 20px;
+        padding: 0px;
+    }
+
+    .selectCategories{
+        padding: 5px;
+    }
+
+    /* You can add a button or icon to toggle the left sidebar on smaller screens */
+    .show-sidebar .left {
+        left: 0; /* Show the left sidebar when the "show-sidebar" class is applied */
+    }
+}
+
+
+
+
+
+
+
+
+

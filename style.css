@@ -56,7 +56,7 @@ main {
     margin-top: 60px;
 }
 
-.btn{
+.btn {
     border: none;
     margin: 5px;
     border-radius: 5px;
@@ -75,7 +75,7 @@ main {
     width: 20vw;
 }
 
-.info{
+.info {
     text-align: center;
     margin: 1rem;
 }
@@ -98,12 +98,50 @@ main {
 }
 
 .addBtn {
+    width: 100%;
+    border-radius: none;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+
+/* For screens smaller than 768px (e.g., mobile devices) */
+@media (max-width: 768px) {
+
+    #txt{
+        margin-top: 80px;
+    }
+    #txt h4{
+        text-align: center;
+    }
+    .cart{
+        display: none;
+    }
+
+    #btnUser{
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    #display{
+        align-items: center;
+    }
+
+    .product{
+        display: flex;
+        justify-content: center;
+    }
+
+    .container{
+        width: 80%;
+    }
+
+    #tshirt {
         width: 100%;
-        border-radius: none;
-        border: none;
-        padding: 1rem;
-        font-size: 1rem;
-        color: white;
-        background-color: black;
-        cursor: pointer;
+    }
 }
